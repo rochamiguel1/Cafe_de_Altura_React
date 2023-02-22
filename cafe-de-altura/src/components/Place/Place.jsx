@@ -1,5 +1,5 @@
 import shop from "../../assets/image-place.jpg"
-export default function Shop(){
+export default function Place(){
 
     return(
         <div className="flex m-8">

@@ -12,7 +12,7 @@ export default function FrecuencyQuestions() {
     return (
         <>
             <div className="flex bg-verde flex-col p-16">
-                <h1 className="text-blanco text-2xl">Preguntas frecuentes</h1>
+                <h1 className="text-blanco text-2xl flex justify-center">Preguntas frecuentes</h1>
                 <div className="m-5">
                    <Questions preg={'¿Cómo hago el pedido?'} icon={arrowup} text={question1}/>
                    <Questions preg={'¿Por qué los precios son tan bajos?'} icon={arrowup} text={question2}/>

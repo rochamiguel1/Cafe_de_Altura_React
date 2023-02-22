@@ -1,9 +1,10 @@
 
 import NavLinks from "./NavLinks/NavLinks";
-import taza from "../../assets/Vectorcoffee.png"
+
 import tel from '../../assets/Icontel.png'
 import Button from "./Button/Button";
 import bag from "../../assets/Group.png"
+import Logo from "./Logo/Logo";
 
 
 export default function Header() {
@@ -11,12 +12,9 @@ export default function Header() {
         <>
             <div className="flex bg-navColor gap-x-7 text-blanco  p-4 items-center justify-between ">
 
-                <div className="flex gap-1">
-                    <p className=" bg-navColor text-2xl ">cafedealtura.com</p>
-                    <img src={taza} alt="cup" className="bg-navColor h-6" />
-                </div>
+                <Logo />
                 < NavLinks />
-                <div className="flex gap-1">
+                <div className="flex gap-1 justify-center items-center">
                     <img src={tel} alt="" className="h-4 " />
                     <p className="text-blanco">+34 919 49 05 18</p>
                 </div>

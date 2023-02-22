@@ -1,15 +1,15 @@
-import taza from "../../assets/Vectorcoffee.png"
+
+import { Link } from "react-router-dom"
 import tel from "../../assets/Icontel.png"
 import mail from "../../assets/Iconmail.png"
+import Logo from "../Header/Logo/Logo"
 export default function Footer() {
     return (
         <footer>
             <div className="flex bg-footer text-blanco justify-between ">
                 <div className="flex flex-col m-8 gap-4 ">
-                    <div className="flex gap-1 text-2xl">
-                        <p >cafedealtura.com</p>
-                        <img src={taza} alt="cup" />
-                    </div>
+
+                    < Logo />
                     <p className=" flex justify-start">Te ayudamos en</p>
                     <button className="bg-plomo p-1 rounded flex gap-1 items-center justify-center">
                         <img src={tel} alt="" />
@@ -22,7 +22,7 @@ export default function Footer() {
                 </div>
                 <div className="flex mr-52">
                     <div className="flex flex-col m-10 gap-4 mt-16">
-                        <p>Tienda</p>
+                        <Link to={'/Shop'} >Tienda</Link>
                         <p>Suscripción</p>
                         <p>Para empresas</p>
                         <p>Sobre nosotros</p>
