@@ -5,8 +5,8 @@ import ContactForm from "../ContactForm/ContactForm"
 export default function Contact() {
     return (
         <div className="bg-bg-contact ">
-            <div className="flex bg-bg-contact justify-between mt-8">
-                <div className="  flex  flex-col p-6 text-sm gap-4  justify-center">
+            <div className="flex bg-bg-contact justify-between mt-8 max-w-[1200px]">
+                <div className=" flex flex-col p-8 justify-center items-start gap-4">
                     <h1 className="text-lg font-semibold leading-6 mb-4 flex justify-start">Entra en contacto con nosotros</h1>
                     <p className="flex justify-start text-sm">Si tienes dudas, ponte en contacto con nosotros a través del formulario y te responderemos lo antes
                         posible.</p>

@@ -11,9 +11,9 @@ import Novedades from "../components/Novedades/Novedades";
 
 export default function Home() {
 
+
+
     
-
-
     return (
         <>
             <Header />

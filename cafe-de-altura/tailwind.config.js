@@ -22,9 +22,11 @@ module.exports = {
       'negro': '#2B2A2B',
       'hovercafe': '#E3DED7',
       'footer': '#1F1815',
-
+      'background': '#F7F5F3',
+      'border' : '#D1D5DB'
     }
 
   },
   plugins: [],
 }
+
