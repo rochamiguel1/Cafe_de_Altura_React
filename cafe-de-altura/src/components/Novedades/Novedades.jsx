@@ -1,13 +1,10 @@
 import arrow from "../../assets/arrow.png"
 import CoffeeCard from "../CoffeeCard/CoffeeCard"
-
 import { useContext } from "react";
 import { ProductsContext } from "../../App";
-
 import React from 'react'
 import { Link } from "react-router-dom";
-import Shop from "../../Pages/Shop";
-import CoffeeList from "../CoffeeList/CoffeeList";
+
 
 export default function Novedades() {
 
@@ -23,7 +20,6 @@ export default function Novedades() {
                         return <CoffeeCard brand={bolsacafe.brand} price={bolsacafe.price} img_url={bolsacafe.img_url} key={i} id={bolsacafe._id} />
                     })
                 }
-
 
             </div>
             <div className="flex items-center justify-center gap-3 mt-5 leading-4">

@@ -10,11 +10,8 @@ export const ProductsContext = createContext()
 function App() {
 
   const [coffeeBag, setcoffeeBag] = useState([])
+
   const [added, setAdded] = useState(JSON.parse(localStorage.getItem('cart')) || [])
-
-
-
-
 
   useEffect(() => {
     fetch("https://cafe-de-altura-api.vercel.app/api/products")
@@ -26,7 +23,6 @@ function App() {
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(added))
   }, [added])
-
 
   return (
 

@@ -34,7 +34,7 @@ export default function Cesta() {
                 <div className='flex flex-col m-6'>
                     <div className="">
                         {
-                            added.length === 0 ? <p>No hay nada en la cesta</p> : added.map(coffee => <CestaProductos key={coffee.id} quantity={coffee.quantity} brand={coffee.brand} img_url={coffee.img_url} price={coffee.price} />)
+                            added.length === 0 ? <p>No hay productos seleccionados</p> : added.map(coffee => <CestaProductos key={coffee.id} quantity={coffee.quantity} brand={coffee.brand} img_url={coffee.img_url} price={coffee.price} />)
                         }
                     </div>
                     <div className=''>

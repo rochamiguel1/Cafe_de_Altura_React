@@ -9,17 +9,13 @@ import { useContext } from "react";
 import { ProductsContext } from "../../App";
 
 
-
-
 export default function Header() {
 
-    const { added } = useContext(ProductsContext)
+    const {added} = useContext(ProductsContext)
 
     const bagQuantity = added.reduce((acc, coffee) => {
         return acc += coffee.quantity
     }, 0)
-
-
 
     return (
         <>
